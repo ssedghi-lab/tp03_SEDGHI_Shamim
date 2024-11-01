@@ -1,0 +1,6 @@
+<form class="search-form relative flex items-center bg-gray-100 rounded-full p-2 shadow-lg">
+    <button type="submit" class="search-button p-2 text-blue-500 hover:text-blue-700 transition duration-300">
+        <i class="fas fa-search"></i>
+    </button>
+    <input class="search-input bg-transparent placeholder-gray-500 text-gray-800 focus:outline-none ml-2 w-full" placeholder="Recherche..." required="" type="text" #searchInput (input)="updateProduits(searchInput.value)">
+</form>
